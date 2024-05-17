@@ -1,41 +1,131 @@
 const story = [
     {
-        text: "Você acorda em um quarto desconhecido. Há uma porta à sua frente.",
+        text: "Você chega na mansão do colecionador de arte. A cena do crime está à sua frente.",
         choices: [
-            { text: "Abrir a porta", nextScene: 1 },
-            { text: "Olhar pela janela", nextScene: 2 }
+            { text: "Investigar a cena do crime", nextScene: 1 },
+            { text: "Interrogar a esposa", nextScene: 2 }
+        ],
+        background: "images/mansion.jpg",
+        character: ""
+    },
+    {
+        text: "Você encontra uma carta de ameaça no chão.",
+        choices: [
+            { text: "Ler a carta", nextScene: 3 },
+            { text: "Ignorar a carta", nextScene: 4 }
+        ],
+        background: "images/crime_scene.jpg",
+        character: ""
+    },
+    {
+        text: "A esposa do colecionador parece nervosa.",
+        choices: [
+            { text: "Perguntar sobre o relacionamento deles", nextScene: 5 },
+            { text: "Perguntar se ela viu algo suspeito", nextScene: 6 }
+        ],
+        background: "images/wife.jpg",
+        character: "images/wife_character.png"
+    },
+    {
+        text: "A carta de ameaça diz: 'Seu tempo acabou'.",
+        choices: [
+            { text: "Interrogar o rival de negócios", nextScene: 7 },
+            { text: "Explorar a mansão", nextScene: 8 }
+        ],
+        background: "images/threat_letter.jpg",
+        character: ""
+    },
+    {
+        text: "Você decide ignorar a carta e continuar.",
+        choices: [
+            { text: "Interrogar o assistente pessoal", nextScene: 9 },
+            { text: "Examinar os registros financeiros", nextScene: 10 }
         ],
         background: "images/room.jpg",
         character: ""
     },
     {
-        text: "Você abre a porta e encontra um corredor escuro.",
+        text: "A esposa revela que o relacionamento deles estava em crise.",
         choices: [
-            { text: "Andar pelo corredor", nextScene: 3 },
-            { text: "Voltar para o quarto", nextScene: 0 }
+            { text: "Investigar a pintura desaparecida", nextScene: 11 },
+            { text: "Interrogar o artista desonrado", nextScene: 12 }
         ],
-        background: "images/corridor.jpg",
+        background: "images/wife.jpg",
+        character: "images/wife_character.png"
+    },
+    {
+        text: "Ela menciona que viu alguém entrando pela janela.",
+        choices: [
+            { text: "Investigar a janela", nextScene: 13 },
+            { text: "Interrogar o rival de negócios", nextScene: 7 }
+        ],
+        background: "images/window.jpg",
         character: ""
     },
     {
-        text: "Você olha pela janela e vê um jardim bonito.",
+        text: "O rival de negócios parece calmo e confiante.",
         choices: [
-            { text: "Sair pela janela", nextScene: 4 },
-            { text: "Voltar para a cama", nextScene: 0 }
+            { text: "Perguntar sobre a rivalidade deles", nextScene: 14 },
+            { text: "Perguntar onde ele estava na noite do crime", nextScene: 15 }
         ],
-        background: "images/garden.jpg",
+        background: "images/rival.jpg",
+        character: "images/rival_character.png"
+    },
+    {
+        text: "Explorando a mansão, você encontra uma pintura faltando na parede.",
+        choices: [
+            { text: "Perguntar sobre a pintura desaparecida", nextScene: 11 },
+            { text: "Interrogar o assistente pessoal", nextScene: 9 }
+        ],
+        background: "images/mansion_hall.jpg",
         character: ""
     },
     {
-        text: "Você anda pelo corredor e encontra um estranho.",
+        text: "O assistente pessoal está visivelmente abalado.",
         choices: [
-            { text: "Falar com o estranho", nextScene: 5 },
-            { text: "Ignorar e continuar", nextScene: 6 }
+            { text: "Perguntar sobre o comportamento recente do colecionador", nextScene: 16 },
+            { text: "Perguntar onde ele estava na noite do crime", nextScene: 15 }
         ],
-        background: "images/corridor.jpg",
-        character: "images/stranger.png"
+        background: "images/assistant.jpg",
+        character: "images/assistant_character.png"
     },
-    // Adicione mais cenas conforme necessário
+    {
+        text: "Os registros financeiros mostram grandes transações recentes.",
+        choices: [
+            { text: "Investigar transações suspeitas", nextScene: 17 },
+            { text: "Interrogar o artista desonrado", nextScene: 12 }
+        ],
+        background: "images/financial_records.jpg",
+        character: ""
+    },
+    {
+        text: "A pintura desaparecida era um quadro valioso.",
+        choices: [
+            { text: "Investigar o paradeiro da pintura", nextScene: 18 },
+            { text: "Interrogar o artista desonrado", nextScene: 12 }
+        ],
+        background: "images/painting.jpg",
+        character: ""
+    },
+    {
+        text: "O artista desonrado culpa o colecionador por arruinar sua carreira.",
+        choices: [
+            { text: "Perguntar sobre a noite do crime", nextScene: 15 },
+            { text: "Perguntar sobre sua relação com o colecionador", nextScene: 19 }
+        ],
+        background: "images/artist.jpg",
+        character: "images/artist_character.png"
+    },
+    {
+        text: "A janela está quebrada, indicando uma possível entrada forçada.",
+        choices: [
+            { text: "Seguir as pistas fora da janela", nextScene: 20 },
+            { text: "Interrogar o rival de negócios", nextScene: 7 }
+        ],
+        background: "images/window_broken.jpg",
+        character: ""
+    },
+    // Adicione mais cenas conforme necessário, incluindo finais diferentes
 ];
 
 let currentScene = 0;
@@ -58,4 +148,4 @@ function showScene(sceneIndex) {
 
 document.addEventListener("DOMContentLoaded", () => {
     showScene(currentScene);
-});
+});                           
