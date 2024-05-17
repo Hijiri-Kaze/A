@@ -125,62 +125,74 @@ const story = [
         background: "images/window_broken.jpg",
         character: ""
     },
-    // Adicione mais cenas conforme necessário, incluindo finais diferentes
     // Cena: Interrogando o rival de negócios sobre a rivalidade
-{
-    text: "O rival de negócios fala sobre sua rivalidade com o colecionador.",
-    choices: [
-        { text: "Perguntar sobre a última vez que eles se encontraram", nextScene: 21 },
-        { text: "Perguntar sobre o que discutiram", nextScene: 22 }
-    ],
-    background: "images/rival.jpg",
-    character: "images/rival_character.png"
-},
-
-// Cena: Descobrindo a verdade com o assistente pessoal
-{
-    text: "O assistente pessoal revela informações cruciais sobre as finanças do colecionador.",
-    choices: [
-        { text: "Perguntar sobre transações suspeitas", nextScene: 23 },
-        { text: "Perguntar sobre a relação com a esposa", nextScene: 24 }
-    ],
-    background: "images/assistant.jpg",
-    character: "images/assistant_character.png"
-},
-
-// Final: Resolvendo o caso com base nas pistas
-{
-    text: "Você conclui que o culpado é...",
-    choices: [
-        { text: "A esposa", nextScene: 25 },
-        { text: "O rival de negócios", nextScene: 26 },
-        { text: "O assistente pessoal", nextScene: 27 },
-        { text: "O artista desonrado", nextScene: 28 }
-    ],
-    background: "images/office.jpg",
-    character: ""
-}
-// Final: Acusando a esposa
-{
-    text: "Você acusa a esposa e apresenta as provas. Ela confessa o crime.",
-    choices: [
-        { text: "Finalizar o caso", nextScene: 0 }
-    ],
-    background: "images/wife_confession.jpg",
-    character: "images/wife_character.png"
-},
-
-// Final: Acusando o rival de negócios
-{
-    text: "Você acusa o rival de negócios, mas ele tem um álibi sólido. Caso não resolvido.",
-    choices: [
-        { text: "Tentar novamente", nextScene: 0 }
-    ],
-    background: "images/rival.jpg",
-    character: "images/rival_character.png"
-},
-
-// Outros finais seguem a mesma lógica...
+    {
+        text: "O rival de negócios fala sobre sua rivalidade com o colecionador.",
+        choices: [
+            { text: "Perguntar sobre a última vez que eles se encontraram", nextScene: 21 },
+            { text: "Perguntar sobre o que discutiram", nextScene: 22 }
+        ],
+        background: "images/rival.jpg",
+        character: "images/rival_character.png"
+    },
+    // Cena: Descobrindo a verdade com o assistente pessoal
+    {
+        text: "O assistente pessoal revela informações cruciais sobre as finanças do colecionador.",
+        choices: [
+            { text: "Perguntar sobre transações suspeitas", nextScene: 23 },
+            { text: "Perguntar sobre a relação com a esposa", nextScene: 24 }
+        ],
+        background: "images/assistant.jpg",
+        character: "images/assistant_character.png"
+    },
+    // Final: Resolvendo o caso com base nas pistas
+    {
+        text: "Você conclui que o culpado é...",
+        choices: [
+            { text: "A esposa", nextScene: 25 },
+            { text: "O rival de negócios", nextScene: 26 },
+            { text: "O assistente pessoal", nextScene: 27 },
+            { text: "O artista desonrado", nextScene: 28 }
+        ],
+        background: "images/office.jpg",
+        character: ""
+    },
+    // Final: Acusando a esposa
+    {
+        text: "Você acusa a esposa e apresenta as provas. Ela confessa o crime.",
+        choices: [
+            { text: "Finalizar o caso", nextScene: 0 }
+        ],
+        background: "images/wife_confession.jpg",
+        character: "images/wife_character.png"
+    },
+    // Final: Acusando o rival de negócios
+    {
+        text: "Você acusa o rival de negócios, mas ele tem um álibi sólido. Caso não resolvido.",
+        choices: [
+            { text: "Tentar novamente", nextScene: 0 }
+        ],
+        background: "images/rival.jpg",
+        character: "images/rival_character.png"
+    },
+    // Final: Acusando o assistente pessoal
+    {
+        text: "Você acusa o assistente pessoal. Ele nega veementemente e parece genuinamente chocado.",
+        choices: [
+            { text: "Tentar novamente", nextScene: 0 }
+        ],
+        background: "images/assistant.jpg",
+        character: "images/assistant_character.png"
+    },
+    // Final: Acusando o artista desonrado
+    {
+        text: "Você acusa o artista desonrado. Ele finalmente confessa, revelando todo o plano.",
+        choices: [
+            { text: "Finalizar o caso", nextScene: 0 }
+        ],
+        background: "images/artist_confession.jpg",
+        character: "images/artist_character.png"
+    }
 ];
 
 let currentScene = 0;
@@ -203,4 +215,5 @@ function showScene(sceneIndex) {
 
 document.addEventListener("DOMContentLoaded", () => {
     showScene(currentScene);
-});                           
+});
+             
