@@ -23,7 +23,7 @@ const story = [
             { text: "Perguntar sobre o relacionamento deles", nextScene: 5 },
             { text: "Perguntar se ela viu algo suspeito", nextScene: 6 }
         ],
-        background: "images/wife.jpg",
+        background: "images/mansion.jpg",
         character: "images/wife_character.png"
     },
     {
