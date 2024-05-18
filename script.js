@@ -8,6 +8,7 @@ const story = [
         background: "images/mansion.jpg",
         character: ""
     },
+    // 1
     {
         text: "Você encontra uma carta de ameaça no chão.",
         choices: [
@@ -17,6 +18,7 @@ const story = [
         background: "images/crime_scene.jpg",
         character: ""
     },
+    // 2
     {
         text: "A esposa do colecionador parece nervosa.",
         choices: [
@@ -26,6 +28,7 @@ const story = [
         background: "images/mansion.jpg",
         character: "images/wife_character.png"
     },
+    // 3
     {
         text: "A carta de ameaça diz: 'Seu tempo acabou'.",
         choices: [
@@ -35,6 +38,7 @@ const story = [
         background: "images/threat_letter.jpg",
         character: ""
     },
+             // 4
     {
         text: "Você decide ignorar a carta e continuar.",
         choices: [
@@ -44,6 +48,7 @@ const story = [
         background: "images/room.jpg",
         character: ""
     },
+             // 5
     {
         text: "A esposa revela que o relacionamento deles estava em crise.",
         choices: [
@@ -53,6 +58,7 @@ const story = [
         background: "images/wife.jpg",
         character: "images/wife_character.png"
     },
+    // 6
     {
         text: "Ela menciona que viu alguém entrando pela janela.",
         choices: [
@@ -62,6 +68,7 @@ const story = [
         background: "images/window.jpg",
         character: ""
     },
+             // 7
     {
         text: "O rival de negócios parece calmo e confiante.",
         choices: [
@@ -71,6 +78,7 @@ const story = [
         background: "images/rival.jpg",
         character: "images/rival_character.png"
     },
+             // 8
     {
         text: "Explorando a mansão, você encontra uma pintura faltando na parede.",
         choices: [
@@ -80,6 +88,7 @@ const story = [
         background: "images/mansion_hall.jpg",
         character: ""
     },
+    // 9
     {
         text: "O assistente pessoal está visivelmente abalado.",
         choices: [
@@ -89,6 +98,7 @@ const story = [
         background: "images/assistant.jpg",
         character: "images/assistant_character.png"
     },
+             // 10
     {
         text: "Os registros financeiros mostram grandes transações recentes.",
         choices: [
@@ -98,6 +108,7 @@ const story = [
         background: "images/financial_records.jpg",
         character: ""
     },
+             // 11
     {
         text: "A pintura desaparecida era um quadro valioso.",
         choices: [
@@ -107,6 +118,7 @@ const story = [
         background: "images/painting.jpg",
         character: ""
     },
+    // 12
     {
         text: "O artista desonrado culpa o colecionador por arruinar sua carreira.",
         choices: [
@@ -116,6 +128,7 @@ const story = [
         background: "images/artist.jpg",
         character: "images/artist_character.png"
     },
+    // 13
     {
         text: "A janela está quebrada, indicando uma possível entrada forçada.",
         choices: [
@@ -125,6 +138,7 @@ const story = [
         background: "images/window_broken.jpg",
         character: ""
     },
+             // 14
     // Cena: Interrogando o rival de negócios sobre a rivalidade
     {
         text: "O rival de negócios fala sobre sua rivalidade com o colecionador.",
@@ -135,6 +149,7 @@ const story = [
         background: "images/rival.jpg",
         character: "images/rival_character.png"
     },
+             // 15
     // Cena: Descobrindo a verdade com o assistente pessoal
     {
         text: "O assistente pessoal revela informações cruciais sobre as finanças do colecionador.",
@@ -145,6 +160,7 @@ const story = [
         background: "images/assistant.jpg",
         character: "images/assistant_character.png"
     },
+    // 16
     // Final: Resolvendo o caso com base nas pistas
     {
         text: "Você conclui que o culpado é...",
@@ -157,6 +173,7 @@ const story = [
         background: "images/office.jpg",
         character: ""
     },
+    // 17
     // Final: Acusando a esposa
     {
         text: "Você acusa a esposa e apresenta as provas. Ela confessa o crime.",
@@ -166,6 +183,7 @@ const story = [
         background: "images/wife_confession.jpg",
         character: "images/wife_character.png"
     },
+    //18
     // Final: Acusando o rival de negócios
     {
         text: "Você acusa o rival de negócios, mas ele tem um álibi sólido. Caso não resolvido.",
@@ -175,6 +193,7 @@ const story = [
         background: "images/rival.jpg",
         character: "images/rival_character.png"
     },
+        // 19
     // Final: Acusando o assistente pessoal
     {
         text: "Você acusa o assistente pessoal. Ele nega veementemente e parece genuinamente chocado.",
@@ -184,6 +203,7 @@ const story = [
         background: "images/assistant.jpg",
         character: "images/assistant_character.png"
     },
+            // 20
     // Final: Acusando o artista desonrado
     {
         text: "Você acusa o artista desonrado. Ele finalmente confessa, revelando todo o plano.",
